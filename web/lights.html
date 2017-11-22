@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>annoy me</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/lights.css">
+
+
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
+
+</head>
+<body>
+   <div id="emoji-background"></div>
+
+
+   <!-- Primary Content Holder
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+   <div class="container">
+       <div class="row">
+           <div style="margin-top: 15%">
+               <h4>Annoy me!</h4>
+               This page will change the color of the LIFX bulb in my desk lamp.<br>
+               First input a name, then you'll be able to choose a color.<br>
+               Entries are logged for fun.<br>
+               I should really consider getting a camera for this.<br>
+               <br>
+               <div id="content-holder"></div>
+           </div>
+       </div>
+   </div>
+
+   <!-- Name Form
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+   <div id="name-content" class="content">
+           <div class="twelve columns">
+               <h4>Give me your name</h4>
+               <label for="name">Name:</label>
+               <input type="text" name="name" id="name">
+               <a id="nameEntered" style="text-align:center" class="button button-primary" onclick="saveName()">Here You Go</a>
+           </div>
+   </div>
+
+   <!-- Color Sender
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+   <div id="form-content" class="content">
+        <div class="six columns">
+            <label for="color-picker">Color:</label>
+            <div id="color-picker"></div>
+            <br>
+            <a id="sendColor" style="text-align:center" class="button button-primary" onclick="sendColor()">Send</a>
+        </div>
+        <div class="six columns">
+            <div id="form-log">
+                <table class="u-full-width">
+                    <thead>
+                        <tr>
+                            <th>Who</th>
+                            <th>When</th>
+                            <th>Color</th>
+                        </tr>
+                    </thead>
+                    <tbody id="form-log-body">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+   </div>
+
+   <!-- JS
+   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+   <script src="iro.min.js"></script>
+   <script src="lights.js"></script>
+
+   <!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+</html>
+
+
+

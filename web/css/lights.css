@@ -1,0 +1,29 @@
+.emoji {
+	height: 2em;
+	width: 2em;
+}
+
+#emoji-background {
+	cursor: default;
+	height: 100vh;
+	left: 0;
+	opacity: 0.3;
+	overflow: hidden;
+	position: absolute;
+	top: 0;
+	user-select: none;
+	width: 100vw;
+	z-index: -1;
+}
+
+#emoji-background .floater {
+	font-size: 120px;
+	left: -120px;
+	position: absolute;
+}
+
+.button-delete {
+    background-color: #dd1111;
+    border-color: #000000;
+	color: #ffffff;
+}
